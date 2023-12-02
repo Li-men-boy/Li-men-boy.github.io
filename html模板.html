@@ -1,0 +1,85 @@
+<!-- 申明html文档使用html5文档的规范 -->
+<!DOCTYPE html> 
+<!--lang 当前文档的一个语言 en:英文  ch-zn 中文-->
+<html lang="en">
+    <!-- head 头部标签 他就用来放一些给浏览器看的内容  -->
+    <head>
+        <!-- meta 辅助标签 他自己没有意义 看他属性决定了他的一个作用 -->
+        <!-- charset 字符集  utf-8 万国码  防止网页乱码  gbk-->
+        <meta charset="UTF-8">
+        <!-- 设置设备宽度比例  viewport 视口,窗口-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- keywrods 关键词 通过用户搜什么词能找到我的这个网站 -->
+        <meta name="keywords" content="html,css">
+        <!-- description 描述 描述你这个网站是做什么的 -->
+        <meta name="description" content="学习html网页基础布局">
+        <!-- title 标题标签 -->
+        <title>79期前端基础</title>
+    </head>
+    <!-- body 身体标签  我们正常所写的网页内容全部写在这个标签里面-->
+    <body>
+        一个网页只能有一个h1标签 
+        <!-- <h1>标题</h1>
+        <h2>标题2</h2>
+        <h3>标题3</h3>
+        <h4>标题4</h4>
+        <h5>标题5</h5>
+        <h6>标题6</h6>
+        <div>盒子标签,容器</div>
+        <p>段落标签</p>
+        <p>段落标签</p>
+        <p>段落标签</p>
+        <p>段落标签</p>
+        <p>段落标签</p>
+    
+        大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水大家记得多喝热水
+        <p>大家记得多喝热水</p>
+        <p>大家记得多喝热水</p> -->
+
+        <strong>字体加粗</strong>
+        <b>字体加粗</b>
+        <p>段落标签</p>
+        
+        <i>字体倾斜</i>
+        <em>字体倾斜</em>
+
+        <u>下划线</u>
+
+
+        <!-- 超链接标签  href 放我们要跳转的一个链接地址-->
+        <!-- target 跳转方式 -->
+        <!-- _self 当前页面跳转 默认样式 -->
+        <a href="http://bilibili.com" >bilibili</a>
+        <!-- target 属性 _blank 新开一个页面  点击几次新开几个网页 -->
+        <a href="http://baidu.com" target="_blank">百度1</a>
+        <!-- _new 只新开一个页面 再点击的话就是在新开的那个网页进行刷新-->
+        <a href="http://baidu.com" target="_new">百度</a>
+
+        <!-- target 可以教师一个自定义的值, 比如laowang baidu 遇到自定义的同名的target值就会在同一个窗口打开 没有的话就会新开一个网页 -->
+        <a href="http://bilibili.com" target="laowang">哔哩哔哩</a>
+        <a href="http://baidu.com" target="laowang">百度</a>
+        
+        <!-- 锚点 -->
+        <!-- 这里换行是因为我用p标签包裹起来了  -->
+        <p>
+            <a href="#left">回到顶部</a>
+        </p>
+        <!-- img 图像标签 单标签 src 放图片路径  -->
+        <!-- 属性 width 设置图片宽度 height 设置图片高度 可以不用给单位 -->
+        <img src="./img/1.webp" width="500" height="400" alt="这是一种精美的壁纸图片">
+        
+
+
+        <!-- 有序标签 ol 他的子标签只能是li-->
+        <p>把大象放进冰箱需要几步</p>
+        <!-- type 属性改变他前面的有序样式 a :a b c  A:A B C -->
+        <ol type="A">
+            <li>打开冰箱</li>
+            <li>塞进大象</li>
+            <li>关上冰箱</li>
+            
+        </ol>
+
+        <p> 我是一个p标签 </p>
+    </body>
+</html>
