@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./2fcb98e66cf4c1882ebe4691f6eb762.jpg);
+            background-attachment: fixed; /* 添加属性以确保背景图固定 */
+        }
+
+        #list {
+            width: 98px;
+            height: 59px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 93%;
+            background-image: url(./hong.png);
+            /* 背景图片路径 */
+            background-size: cover;
+            /* 背景图片覆盖容器 */
+            background-position: center;
+            /* 背景图片居中显示 */
+            position: relative;
+            /* 设置相对定位 */
+            z-index: 1;
+            /* 设置z-index，确保#list的背景图片在下面 */
+            margin-left: -265px;
+            margin-top: 10px;
+
+        }
+
+        .arr {
+            width: 59px;
+            height: 59px;
+            background-color: rgba(255, 255, 255, 0.5);
+            /* background-image: url(./fu.jpg); */
+            background-image: url(./111.png);
+            /* 背景图片路径 */
+            background-size: cover;
+            /* 背景图片覆盖容器 */
+            background-position: center;
+            /* 背景图片居中显示 */
+            position: absolute;
+            top: 0;
+            left: 19px;
+            /* 调整为px单位以确保准确定位 */
+            z-index: 2;
+            opacity: 0.5;
+            /* 设置不透明度为0，使得元素完全透明 */
+            border-radius: 64%;
+            margin-top: 1px;
+            margin-left: 0px;
+
+        }
+
+        .shu {
+            width: 300px;
+            height: 500px;
+            color: snow;
+            position: absolute;
+            font-size: 7vw;
+            left: 28px;
+            top: -150px;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif; /* 设置为华文新魏字体 */
+        }
+        
+        #ni {
+            width: 300px;
+            height: 500px;
+            color: snow;
+            position: absolute;
+            top: -22px;
+            font-size: 6vw;
+            left: 109px;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif; /* 设置为华文新魏字体 */
+            
+        } #list {
+            width: 98px;
+            height: 59px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 93%;
+            background-image: url(./hong.png);
+            /* 背景图片路径 */
+            background-size: cover;
+            /* 背景图片覆盖容器 */
+            background-position: center;
+            /* 背景图片居中显示 */
+            position: relative;
+            /* 设置相对定位 */
+            z-index: 1;
+            /* 设置z-index，确保#list的背景图片在下面 */
+            margin-left: -265px;
+            margin-top: 10px;
+
+        }
+
+        .arr {
+            width: 59px;
+            height: 59px;
+            background-color: rgba(255, 255, 255, 0.5);
+            /* background-image: url(./fu.jpg); */
+            background-image: url(./111.png);
+            /* 背景图片路径 */
+            background-size: cover;
+            /* 背景图片覆盖容器 */
+            background-position: center;
+            /* 背景图片居中显示 */
+            position: absolute;
+            top: 0;
+            left: 19px;
+            /* 调整为px单位以确保准确定位 */
+            z-index: 2;
+            opacity: 0.5;
+            /* 设置不透明度为0，使得元素完全透明 */
+            border-radius: 64%;
+            margin-top: 1px;
+            margin-left: 0px;
+
+        }
+
+        .shu {
+            width: 300px;
+            height: 50px;
+            color: snow;
+            position: absolute;
+            font-size: 7vw;
+            left: 28px;
+            top: -150px;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif; /* 设置为华文新魏字体 */
+        }
+        
+        #ni {
+            width: 300px;
+            height: 50px;
+            color: snow;
+            position: absolute;
+            top: -22px;
+            font-size: 6vw;
+            left: 109px;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif; /* 设置为华文新魏字体 */
+            
+        }
+
+        #so {
+            background-color: #802424;
+            width: 153px;
+            height: 45px;
+            position: absolute;
+            left: 527px;
+            top: 455px;
+            background-size: cover;
+            background-position: center;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif;
+            font-size: 30px;
+            text-shadow: 0px 0px 10px #802424;
+            color: snow;
+            /* backdrop-filter: blur(5px); */
+            border-radius: 10px;
+            line-height: 45px;
+            /* 设置line-height与容器高度相同，实现垂直居中 */
+
+
+        }
+
+        .dasi {
+            color: #ffffff;
+            z-index: 10;
+            /* 确保链接在最上层 */
+        }
+
+        #so1 {
+            background-color: #802424;
+            width: 153px;
+            height: 45px;
+            position: absolute;
+            left: 720px;
+            top: 455px;
+            background-size: cover;
+            background-position: center;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif;
+            font-size: 30px;
+            text-shadow: 0px 0px 10px #802424;
+            color: snow;
+            /* backdrop-filter: blur(5px); */
+            border-radius: 10px;
+            line-height: 45px;
+            /* 设置line-height与容器高度相同，实现垂直居中 */
+            text-align: center;
+        }
+
+        #lu {
+            color: snow;
+            font-size: 30px;
+            position: absolute;
+            top: 392px;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif;
+            left: 615px;
+
+        }
+        a{
+            z-index: 100;
+            color: snow;
+            font-size: 30px;
+            position: absolute;
+            left: 523px;
+            top: 463px;
+            font-family: "华文新魏", "Microsoft YaHei", sans-serif;
+            text-decoration:none;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="list">
+        <div class="arr"></div>
+        <p class="shu">数字</p>
+        <p id="ni">泥泥狗</p>
+    </div>
+
+    <div id="so">
+    </div>
+    <div id="so1">
+        <p class="dasi1">素材库品集</p>
+    </div>
+    <p id="lu">Digital NiNiGou</p>
+   <a href="./idgt.html" >大师作品集</a>
+</body>
+</html>
