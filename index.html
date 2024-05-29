@@ -5,137 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Chart with Code Display</title>
-    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
     <script src="./data.json"></script>
     <script src="./list.json"></script>
-    <style>
-        #main {
-            width: 600px;
-            height: 400px;
-            display: none;
-        }
-        #codeContainer {
-            display: none;
-            white-space: pre-wrap; /* 保持代码格式 */
-            background-color: #f5f5f5;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-top: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            color: #333;
-            overflow: auto; /* 添加滚动条 */
-        }
-        button {
-            margin: 5px;
-        }
-    </style>
 </head>
 
 <body>
-    <button id="showChartBtn">显示折线图表</button>
-    <button id="hideChartBtn">隐藏图表</button>
-    <button id="showCodeBtn">显示代码</button>
-    <button id="hideCodeBtn">隐藏代码</button>
-
-    <div id="main"></div>
-    <div id="codeContainer">
-        <button id="copyCodeBtn">复制代码</button>
-        <pre><code id="codeToCopy">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;script src="./node_modules/echarts/dist/echarts.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;div id="main" style="width: 600px;height:400px;"&gt;&lt;/div&gt;
-    &lt;script&gt;
-
-        var chartDom = document.getElementById('main');
-        var myChart = echarts.init(chartDom, 'dark');
-        var option;
-
-        option = {
-            xAxis: {
-                type: 'category',
-                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-            },
-            yAxis: {
-                type: 'value'
-            },
-            series: [
-                {
-                    data: [150, 230, 224, 218, 135, 147, 260],
-                    type: 'line'
-                }
-            ]
-        };
-
-        option &amp;&amp; myChart.setOption(option);
-
-    &lt;/script&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-        </code></pre>
-    </div>
-
     <script>
-        var chartDom = document.getElementById('main');
-        var myChart = echarts.init(chartDom);
-        var option = {
-            xAxis: {
-                type: 'category',
-                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-            },
-            yAxis: {
-                type: 'value'
-            },
-            series: [
-                {
-                    data: [150, 230, 224, 218, 135, 147, 260],
-                    type: 'line'
-                }
-            ]
-        };
-        option && myChart.setOption(option);
-
-        var showChartBtn = document.getElementById('showChartBtn');
-        var hideChartBtn = document.getElementById('hideChartBtn');
-        var showCodeBtn = document.getElementById('showCodeBtn');
-        var hideCodeBtn = document.getElementById('hideCodeBtn');
-        var copyCodeBtn = document.getElementById('copyCodeBtn');
-        var codeContainer = document.getElementById('codeContainer');
-        var codeToCopy = document.getElementById('codeToCopy');
-
-        showChartBtn.addEventListener('click', function () {
-            chartDom.style.display = 'block';
-        });
-
-        hideChartBtn.addEventListener('click', function () {
-            chartDom.style.display = 'none';
-        });
-
-        showCodeBtn.addEventListener('click', function () {
-            codeContainer.style.display = 'block';
-        });
-
-        hideCodeBtn.addEventListener('click', function () {
-            codeContainer.style.display = 'none';
-        });
-
-        copyCodeBtn.addEventListener('click', function() {
-            navigator.clipboard.writeText(codeToCopy.innerText).then(function() {
-                alert('代码已复制到剪贴板');
-            }, function(err) {
-                console.error('复制失败：', err);
-            });
-        });
-
         // 阻止F12打开开发者工具
         document.addEventListener("keydown", function(event) {
             if (event.keyCode == 123) { // F12的keyCode是123
@@ -149,6 +24,80 @@
             e.preventDefault();
         }, false);
     </script>
+     <audio controls>
+        <source src="./1.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./2.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./3.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./4.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./5.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./6.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./7.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+        <source src="./8.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./9.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./10.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+        <source src="./11.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./12.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./13.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./14.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./15.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./16.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+        <source src="./17.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+        <source src="./18.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+        <source src="./19.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="./20.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+        <source src="./21.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+        <source src="./22.mp3" type="audio/mpeg">
+    </audio>
+
 </body>
 
 </html>
