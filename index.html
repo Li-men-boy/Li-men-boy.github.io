@@ -12,12 +12,7 @@
 <body>
     <script>
         // 阻止F12打开开发者工具
-        document.addEventListener("keydown", function(event) {
-            if (event.keyCode == 123) { // F12的keyCode是123
-                event.preventDefault();
-                return false;
-            }
-        }, false);
+        
 
         // 阻止鼠标右键
         document.addEventListener('contextmenu', function(e) {
